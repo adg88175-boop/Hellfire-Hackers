@@ -1,0 +1,124 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #E6E6FA; /* Lavender */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #E6E6FA, #C4B5FD);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7C3AED;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #7C3AED;
+}
+
+.nav-buttons button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-login {
+    background-color: #7C3AED;
+    color: white;
+}
+
+.btn-demo {
+    background-color: transparent;
+    border: 1px solid #7C3AED;
+    color: #7C3AED;
+}
+
+.btn-login:hover, .btn-demo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(to bottom, #E6E6FA, #C4B5FD);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #7C3AED;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.problem-overview, .how-it-works, .features {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
+h2 {
+    color: #7C3AED;
+    margin-bottom: 2rem;
+}
+
+.steps, .feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.step, .card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-basis: 300px;
+    transition: all 0.3s ease;
+}
+
+.step:hover, .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+h3 {
+    color: #7C3AED;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #C4B5FD;
+    color: #333;
+}

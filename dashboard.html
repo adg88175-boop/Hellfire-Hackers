@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ProtoLearn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ProtoLearn</div>
+            <button id="logout-btn" class="btn-login">Logout</button>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <h2>Your Dashboard</h2>
+        <div class="time-input">
+            <h3>How much free time do you have?</h3>
+            <div class="time-options">
+                <button class="time-btn" data-time="15">15 min</button>
+                <button class="time-btn" data-time="30">30 min</button>
+                <button class="time-btn" data-time="60">1 hr</button>
+                <button class="time-btn" data-time="120">2 hr</button>
+            </div>
+        </div>
+
+        <div class="focus-input">
+            <h3>What's your focus?</h3>
+            <div class="focus-options">
+                <button class="focus-btn" data-focus="academic">Academic Learning</button>
+                <button class="focus-btn" data-focus="skill">Skill Building</button>
+                <button class="focus-btn" data-focus="collaboration">Collaboration</button>
+                <button class="focus-btn" data-focus="personal">Personal Growth</button>
+            </div>
+        </div>
+
+        <div class="recommendations">
+            <h3>AI Recommended Activities</h3>
+            <div class="activity-cards">
+                </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
